@@ -1,0 +1,53 @@
+[project]
+name = "cbr-marts"
+version = "1.0.0"
+description = "Ежедневный ETL курсов ЦБ: свой оркестратор с догрузкой за прошлое, витрины и дашборд"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.1",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+cbr = "cbr.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4",
+    "ruff>=0.12",
+    "mypy>=1.17",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cbr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "C4", "SIM", "PT", "RUF", "DTZ"]
+# RUF001-003: в русских строках есть кириллица, похожая на латиницу, — это нормально.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+# S311: в демонстрации курсы имитируются случайным блужданием, это не криптография.
+"src/cbr/demo.py" = ["S311"]
+"tests/**" = ["S101", "S311"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cbr"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]

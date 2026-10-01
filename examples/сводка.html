@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Курсы ЦБ: сводка</title>
+<style>
+:root { color-scheme: light dark; --ink:#151a21; --ink-2:#5c6773; --line:#e0e4e9; --bg:#f6f7f9;
+        --card:#ffffff; --up:#b3261e; --down:#1f6b3a; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e9edf2; --ink-2:#98a2ad; --line:#2a3138; --bg:#11151a; --card:#191e24;
+          --up:#ff8a80; --down:#8fd6a8; }
+}
+* { box-sizing: border-box; }
+body { margin:0; padding:24px 16px 48px; background:var(--bg); color:var(--ink);
+       font:15px/1.5 "Segoe UI", Roboto, Arial, sans-serif; }
+main { max-width: 960px; margin: 0 auto; }
+h1 { font-size:1.5rem; margin:0 0 4px; }
+.sub { color:var(--ink-2); margin:0 0 24px; }
+.cards { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:12px; margin-bottom:20px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+.code { font-size:.8rem; color:var(--ink-2); letter-spacing:.08em; }
+.value { font-size:1.5rem; font-variant-numeric: tabular-nums; margin:2px 0 6px; }
+.delta { font-size:.85rem; font-variant-numeric: tabular-nums; }
+.up { color:var(--up); } .down { color:var(--down); }
+svg { display:block; width:100%; height:40px; margin-top:8px; }
+table { border-collapse:collapse; width:100%; font-size:.9rem; background:var(--card);
+        border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+th, td { text-align:right; padding:7px 10px; border-bottom:1px solid var(--line); font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align:left; }
+h2 { font-size:1.05rem; margin:24px 0 10px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Курсы Банка России</h1>
+<p class="sub">Период: 18.08.2026 — 12.09.2026. Собрано 12.09.2026.</p>
+<div class="cards"><div class="card"><div class="code">CHF · Швейцарский франк</div><div class="value">103.4843 ₽</div><div class="delta down">день -0.59% · неделя -3.35%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,23.6 10.5,24.6 21.1,24.3 31.6,29.0 42.1,36.0 52.6,34.9 63.2,22.4 73.7,25.3 84.2,8.7 94.7,11.0 105.3,7.7 115.8,5.1 126.3,8.1 136.8,2.0 147.4,5.3 157.9,10.7 168.4,10.3 178.9,19.0 189.5,32.4 200.0,38.0" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">CNY · Юань</div><div class="value">12.5519 ₽</div><div class="delta down">день -0.09% · неделя -2.58%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,20.0 10.5,20.2 21.1,19.9 31.6,33.6 42.1,38.0 52.6,34.9 63.2,23.8 73.7,26.0 84.2,11.4 94.7,13.5 105.3,5.9 115.8,3.5 126.3,2.0 136.8,2.2 147.4,4.3 157.9,6.2 168.4,4.3 178.9,13.3 189.5,23.9 200.0,24.7" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">EUR · Евро</div><div class="value">97.8728 ₽</div><div class="delta down">день -0.42% · неделя -2.68%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,23.9 10.5,20.4 21.1,22.1 31.6,38.0 42.1,36.9 52.6,31.8 63.2,22.3 73.7,24.3 84.2,6.6 94.7,12.1 105.3,4.3 115.8,4.0 126.3,2.0 136.8,4.0 147.4,4.3 157.9,7.8 168.4,4.9 178.9,15.9 189.5,24.4 200.0,28.0" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">GBP · Фунт стерлингов</div><div class="value">114.0080 ₽</div><div class="delta down">день -0.35% · неделя -2.60%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,21.7 10.5,19.9 21.1,20.9 31.6,35.0 42.1,38.0 52.6,34.6 63.2,21.8 73.7,23.8 84.2,9.5 94.7,13.5 105.3,5.5 115.8,2.3 126.3,2.0 136.8,5.2 147.4,7.5 157.9,11.8 168.4,6.9 178.9,16.8 189.5,27.6 200.0,30.6" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">JPY · Иен</div><div class="value">0.5450 ₽</div><div class="delta down">день -0.71% · неделя -1.80%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,26.4 10.5,26.9 21.1,26.9 31.6,33.7 42.1,38.0 52.6,35.1 63.2,29.8 73.7,30.6 84.2,21.7 94.7,24.1 105.3,21.8 115.8,19.1 126.3,19.2 136.8,13.0 147.4,8.6 157.9,10.5 168.4,2.0 178.9,7.8 189.5,13.9 200.0,17.3" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">KZT · Тенге</div><div class="value">0.1869 ₽</div><div class="delta up">день +1.24% · неделя -1.60%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,28.1 10.5,23.4 21.1,21.9 31.6,38.0 42.1,35.9 52.6,31.2 63.2,23.9 73.7,26.0 84.2,14.0 94.7,21.4 105.3,19.0 115.8,12.8 126.3,5.5 136.8,2.0 147.4,4.9 157.9,8.9 168.4,3.6 178.9,11.5 189.5,23.3 200.0,15.4" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">TRY · Турецких лир</div><div class="value">1.7390 ₽</div><div class="delta down">день -0.15% · неделя -3.06%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,13.8 10.5,13.9 21.1,14.6 31.6,33.2 42.1,38.0 52.6,34.5 63.2,24.4 73.7,26.6 84.2,9.8 94.7,13.7 105.3,6.2 115.8,4.2 126.3,2.0 136.8,3.5 147.4,6.8 157.9,11.1 168.4,10.3 178.9,21.1 189.5,32.7 200.0,34.0" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div><div class="card"><div class="code">USD · Доллар США</div><div class="value">84.2569 ₽</div><div class="delta down">день -0.11% · неделя -2.69%</div><svg viewBox="0 0 200 40" preserveAspectRatio="none" role="img" aria-label="динамика курса"><polyline points="0.0,19.5 10.5,18.2 21.1,18.5 31.6,34.2 42.1,38.0 52.6,34.8 63.2,24.4 73.7,26.0 84.2,11.2 94.7,14.3 105.3,7.5 115.8,4.1 126.3,2.0 136.8,3.0 147.4,5.6 157.9,9.1 168.4,6.6 178.9,15.6 189.5,25.4 200.0,26.2" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.75"/></svg></div></div><h2>По месяцам</h2><table><tr><th>Код</th><th>Месяц</th><th>Дней</th><th>Средний</th><th>Минимум</th><th>Максимум</th></tr><tr><td>CNY</td><td>2026-08</td><td>10</td><td>12.5605</td><td>12.3343</td><td>12.7691</td></tr><tr><td>CNY</td><td>2026-09</td><td>10</td><td>12.8072</td><td>12.5519</td><td>12.9217</td></tr><tr><td>EUR</td><td>2026-08</td><td>10</td><td>98.3434</td><td>96.7335</td><td>100.2998</td></tr><tr><td>EUR</td><td>2026-09</td><td>10</td><td>99.9247</td><td>97.8728</td><td>100.8287</td></tr><tr><td>USD</td><td>2026-08</td><td>10</td><td>84.5172</td><td>82.9211</td><td>85.9541</td></tr><tr><td>USD</td><td>2026-09</td><td>10</td><td>86.0332</td><td>84.2569</td><td>86.9963</td></tr></table>
+</main>
+</body>
+</html>
